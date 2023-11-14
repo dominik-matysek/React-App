@@ -9,6 +9,8 @@ import ColorList from './ColorList';
 import Slots from './Slots';
 import ShoppingList from './ShoppingList';
 import PropertyList from "./PropertyList";
+import Clicker from './Clicker';
+import Form from './Form';
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -49,7 +51,12 @@ function App() {
 
     {/* <ShoppingList items = {data}/> */}
 
-    <PropertyList properties = {properties}/>
+    {/* <PropertyList properties = {properties}/> */}
+    {/* <Clicker/>
+    <Form/> */}
+
+  <Clicker message = "HI" buttonText = "Click me"/>
+  {/* <Clicker message = "Please stop clicking me" buttonText = "do not click"/> */}
 
   </div>
  );
