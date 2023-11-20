@@ -11,6 +11,30 @@ import ShoppingList from './ShoppingList';
 import PropertyList from "./PropertyList";
 import Clicker from './Clicker';
 import Form from './Form';
+import Counter from './Counter';
+import Toggler from './Toggler';
+import ToggleCounter from './ToggleCounter';
+import ColorBox from './ColorBox';
+import ColorBoxGrid from './ColorBoxGrid';
+
+const colors = [
+  "#E53935",
+  "#E91E63",
+  "#9C27B0",
+  "#673AB7",
+  "#3F51B5",
+  "#2196F3",
+  "#03A9F4",
+  "#00BCD4",
+  "#009688",
+  "#4CAF50",
+  "#8BC34A",
+  "#CDDC39",
+  "#FFEB3B",
+  "#FFC107",
+  "#FF9800",
+  "#FF5722",
+];
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -55,10 +79,18 @@ function App() {
     {/* <Clicker/>
     <Form/> */}
 
-  <Clicker message = "HI" buttonText = "Click me"/>
+  {/* <Clicker message = "HI" buttonText = "Click me"/> */}
   {/* <Clicker message = "Please stop clicking me" buttonText = "do not click"/> */}
 
+  {/* <Counter/> */}
+
+  {/* <Toggler/> */}
+  {/* <ToggleCounter/> */}
+
+  <ColorBoxGrid colors={colors} />
+
   </div>
+
  );
 }
 
